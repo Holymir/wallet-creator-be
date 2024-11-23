@@ -1,4 +1,4 @@
-package com.example.walletcreatorbe;
+package com.holymirLabs.WalletCreatorBE;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
