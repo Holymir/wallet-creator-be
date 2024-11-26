@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/wallet")
 public class WalletController {
 
-    @Autowired
-    private WalletService walletService;
+//    @Autowired
+    private final WalletService walletService;
+    public WalletController(WalletService walletService) {
+        this.walletService = walletService;
+    }
 
     @PostMapping("/{type}")
     public ResponseEntity<WalletResponse> generateWallet(
